@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "hiro08gh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "object-assign": "^4.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
+  }
 }
