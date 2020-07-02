@@ -8,9 +8,20 @@
     "invariant": "^2.2.4",
     "object-assign": "^4.1.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "devDependencies": {
     "@types/jest": "26.0.3",
     "@types/node": "14.0.14",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
     "jest": "26.1.0",
     "prettier": "2.0.5",
     "ts-jest": "26.1.1",
@@ -18,6 +29,8 @@
   },
   "scripts": {
     "build": "tsc -p .",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
